@@ -48,6 +48,6 @@ install(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/build/facebook-tunnel DESTINATION b
 #set(CPACK_DEBIAN_ARCHITECTURE ${CMAKE_SYSTEM_PROCESSOR})
 
 #set(CPACK_COMPONENTS_ALL Libraries ApplicationData)
-INCLUDE(CPack)
+#INCLUDE(CPack)
 
-ENDIF(EXISTS "${CMAKE_ROOT}/Modules/CPack.cmake")
+#ENDIF(EXISTS "${CMAKE_ROOT}/Modules/CPack.cmake")

@@ -16,6 +16,6 @@ add_library(utils utils.cpp)
 add_executable(facebook-tunnel main.cpp)
 target_link_libraries(facebook-tunnel base64encode tun client facebook utils ${CURL_LIBRARY} ${GUMBO_LIBRARY} ${CMAKE_THREAD_LIBS_INIT})
 set(CMAKE_INSTALL_PREFIX "/usr")
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/facebook-tunnel.desktop DESTINATION share/applications)
-install(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/facebook-tunnel DESTINATION bin)
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/build/facebook-tunnel.desktop DESTINATION share/applications)
+install(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/build/facebook-tunnel DESTINATION bin)
 

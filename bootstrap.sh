@@ -8,7 +8,7 @@ rm -rfv build
 mkdir -p build && cd build
 echo "Name[en]=Facebook Tunnel
 exec=facebook-tunnel
-">facebook-tunnel.desktop
+" > facebook-tunnel.desktop
 cmake ..
 ./configure
 make

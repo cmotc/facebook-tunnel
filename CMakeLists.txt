@@ -17,37 +17,4 @@ add_executable(facebook-tunnel main.cpp)
 target_link_libraries(facebook-tunnel base64encode tun client facebook utils ${CURL_LIBRARY} ${GUMBO_LIBRARY} ${CMAKE_THREAD_LIBS_INIT})
 #install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/build/facebook-tunnel.desktop DESTINATION ${SERVICES_INSTALL_DIR}/ServiceMenus)
 install(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/build/facebook-tunnel DESTINATION bin)
-#set(MAJOR_VERSION "1")
-#set(MINOR_VERSION "0")
-#set(PATCH_VERSION "0")
 
-#IF(EXISTS "${CMAKE_ROOT}/Modules/CPack.cmake")
-#include(InstallRequiredSystemLibraries)
-
-#set(CPACK_SET_DESTDIR "on")
-#set(CPACK_PACKAGING_INSTALL_PREFIX "/usr/bin")
-#set(CPACK_GENERATOR "DEB")
-
-#set(CPACK_PACKAGE_DESCRIPTION "facebook-tunnel package for debian")
-#set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "A way of getting to the regular internet in an internet.org pilot area")
-#set(CPACK_PACKAGE_VENDOR "cmotc")
-#set(CPACK_PACKAGE_CONTACT "cmotc@openmailbox.org")
-#set(CPACK_PACKAGE_VERSION_MAJOR "${MAJOR_VERSION}")
-#set(CPACK_PACKAGE_VERSION_MINOR "${MINOR_VERSION}")
-#set(CPACK_PACKAGE_VERSION_PATCH "${PATCH_VERSION}")
-#set(CPACK_PACKAGE_FILE_NAME "${CMAKE_PROJECT_NAME}_${MAJOR_VERSION}.${MINOR_VERSION}.${CPACK_PACKAGE_VERSION_PATCH}")
-#set(CPACK_SOURCE_PACKAGE_FILE_NAME "${CMAKE_PROJECT_NAME}_${MAJOR_VERSION}.${MINOR_VERSION}.${CPACK_PACKAGE_VERSION_PATCH}")
-#demo dependencies
-#set(CPACK_DEBIAN_PACKAGE_DEPENDS " kate , plasma-desktop, libc6 (>= 2.1.3) ")
-
-#dependencies for this service menu
-#set(CPACK_DEBIAN_PACKAGE_DEPENDS "  , dolphin ")
-
-#set(CPACK_DEBIAN_PACKAGE_PRIORITY "optional")
-#set(CPACK_DEBIAN_PACKAGE_SECTION "net")
-#set(CPACK_DEBIAN_ARCHITECTURE ${CMAKE_SYSTEM_PROCESSOR})
-
-#set(CPACK_COMPONENTS_ALL Libraries ApplicationData)
-#INCLUDE(CPack)
-
-#ENDIF(EXISTS "${CMAKE_ROOT}/Modules/CPack.cmake")

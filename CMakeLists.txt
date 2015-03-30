@@ -28,7 +28,7 @@ set(CPACK_SET_DESTDIR "on")
 set(CPACK_PACKAGING_INSTALL_PREFIX "/tmp")
 set(CPACK_GENERATOR "DEB")
 
-set(CPACK_PACKAGE_DESCRIPTION "Facebook-tunnel package for debian")
+set(CPACK_PACKAGE_DESCRIPTION "facebook-tunnel package for debian")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "A way of getting to the regular internet in an internet.org pilot area")
 set(CPACK_PACKAGE_VENDOR "cmotc")
 set(CPACK_PACKAGE_CONTACT "cmotc@openmailbox.org")

@@ -20,5 +20,5 @@ set(CMAKE_INSTALL_PREFIX "/usr")
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/build/facebook-tunnel.desktop DESTINATION share/applications)
 install(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/build/facebook-tunnel DESTINATION bin)
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/facebook.h DESTINATION lib/fbtun)
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/clients.h DESTINATION lib/fbtun)
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/client.h DESTINATION lib/fbtun)
 

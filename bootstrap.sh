@@ -10,5 +10,4 @@ echo "Name[en]=Facebook Tunnel
 exec=facebook-tunnel
 " > facebook-tunnel.desktop
 cmake ..
-./configure
 make
